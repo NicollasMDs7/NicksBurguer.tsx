@@ -10,8 +10,7 @@ import {
   Utensils,
   Store,
 } from "lucide-react";
-import { Inter } from "next/font/google";
-import { Button } from "@/components/ui/button";
+
 import Link from "next/link";
 
 
