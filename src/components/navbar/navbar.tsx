@@ -1,11 +1,10 @@
-"use client";
-import Image from "next/image";
+
 import {
-  Search,
+
   ShoppingCart,
   Instagram,
   Facebook,
-  MessageCircle,
+ 
   Phone,
   MapPin,
   Utensils,
@@ -24,11 +23,11 @@ export function Navbar() {
     <header className="w-full">
       <div className="w-screen  flex justify-between items-center px-4 py-2 border-b-2 border-black xfixed top-0 z-[50]">
         <div className="w-20 h-12 justify-center flex rounded-full">
-          <img src="logo.jpg" alt="logo" />
+          <img src="/logo.jpg" alt="logo" />
         </div>
         <div className="flex justify-center hidden sm:flex">
           <span className="px-8 font-serif text-lg font-bold whitespace-nowrap">
-            Nick's Burguer
+            Nicks Burguer
           </span>
         </div>
 
@@ -36,7 +35,7 @@ export function Navbar() {
           <div className=" text-center">
             {/* Texto para celular */}
             <p className="sm:hidden font-serif text-lg font-bold">
-              Nick's Burguer
+              Nicks Burguer
             </p>
 
             {/* Texto para PC */}
