@@ -1,7 +1,59 @@
+"use client";
+
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+const images = [
+  "faixada.jpg",
+  "lanches.jpg",
+  "logo.jpg",
+];
+
 export function SobreNos() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
   return (
-    <section>
-      <div className="flex justify-center w-full p-8 ">teste</div>
+    <section className="flex flex-col lg:flex-row items-center justify-center p-4 sm:p-8 gap-6">
+      <div className="bg-white shadow-lg rounded-2xl p-4 sm:p-6 max-w-sm sm:max-w-lg w-full">
+        <h2 className="text-lg sm:text-xl font-bold text-gray-800">
+          Sobre Nós
+        </h2>
+        <p className="mt-3 text-gray-600 text-sm sm:text-base">
+          Somos uma hamburgueria artesanal apaixonada por sabores autênticos e
+          ingredientes de qualidade. Cada hambúrguer é preparado com carne
+          fresca, pão artesanal e acompanhamentos feitos com carinho. Venha
+          viver essa experiência única!
+        </p>
+      </div>
+
+      {/* Carrossel - visível apenas no desktop */}
+      <div className="hidden lg:flex items-center relative w-[300px] h-[200px]">
+        <button
+          className="absolute left-0 bg-white p-2 rounded-full shadow-md"
+          onClick={prevSlide}
+        >
+          <ChevronLeft size={24} />
+        </button>
+        <img
+          src={images[currentIndex]}
+          alt="Hambúrguer artesanal"
+          className="w-full h-full object-cover rounded-2xl shadow-lg"
+        />
+        <button
+          className="absolute right-0 bg-white p-2 rounded-full shadow-md"
+          onClick={nextSlide}
+        >
+          <ChevronRight size={24} />
+        </button>
+      </div>
     </section>
   );
 }
