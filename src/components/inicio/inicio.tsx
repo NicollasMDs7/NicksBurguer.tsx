@@ -1,7 +1,4 @@
-import Image from "next/image";
 import * as React from "react";
-
-import { Button } from "@/components/ui/button";
 
 export function Inicio() {
   return (
