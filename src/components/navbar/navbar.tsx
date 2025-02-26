@@ -19,7 +19,7 @@ import Link from "next/link";
 
 export function Navbar() {
   return (
-    <header className="w-full">
+    <header className="w-full bg-white">
       <div className="w-screen  flex justify-between items-center px-4 py-2 border-b-2 border-black xfixed top-0 z-[50]">
         <div className="w-20 h-12 justify-center flex rounded-full">
           <img src="/logo.jpg" alt="logo" />

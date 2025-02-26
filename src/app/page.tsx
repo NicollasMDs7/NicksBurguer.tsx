@@ -9,7 +9,7 @@ import { PreviaMenu } from "@/components/previaMenu/previaMenu";
 
 export default function Home() {
    return (
-     <section>
+     <section className="bg-black">
        <Navbar />
        <Inicio />
        <SobreNos />
