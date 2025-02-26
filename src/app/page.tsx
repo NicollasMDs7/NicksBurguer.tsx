@@ -4,7 +4,7 @@ import {Footer} from "@/components/footer/footer";
 import {Inicio} from "@/components/inicio/inicio";
 import { SobreNos } from "@/components/sobreNos/sobreNos";
 import { Depoimentos } from "@/components/depoimentos/depoimentos";
-import { Localização } from "@/components/localizacao/localizacao";
+import { Localizacao } from "@/components/localizacao/localizacao";
 import { PreviaMenu } from "@/components/previaMenu/previaMenu";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
        <SobreNos />
        <PreviaMenu  />
        <Depoimentos />
-       <Localização />
+       <Localizacao />
        
        <Footer />
      </section>
