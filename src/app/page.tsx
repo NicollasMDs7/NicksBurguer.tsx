@@ -11,10 +11,8 @@ export default function Home() {
    return (
      <section className="bg-black">
        <Navbar />
-       <Inicio />
-       <SobreNos />
-       <PreviaMenu  />
        <Depoimentos />
+      
        <Localizacao />
        
        <Footer />
