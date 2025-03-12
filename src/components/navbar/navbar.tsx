@@ -1,10 +1,7 @@
-
 import {
-
   ShoppingCart,
   Instagram,
   Facebook,
- 
   Phone,
   MapPin,
   Utensils,
@@ -12,10 +9,6 @@ import {
 } from "lucide-react";
 
 import Link from "next/link";
-
-
-
-
 
 export function Navbar() {
   return (
@@ -79,9 +72,13 @@ export function Navbar() {
           <a href="https://www.instagram.com/nick.s_burguer?igsh=dXFzZDk0emVqcWFt">
             <Instagram className="hidden sm:block" />
           </a>
-          <a href="">
-            <ShoppingCart />
-          </a>
+
+          <Link
+            href="/carrinho"
+            className="font-bold flex justify-start items-center p-4 pl-0  hover:bg-gray-200 hover:rounded-2xl hover:p-3"
+          >
+            <ShoppingCart className="mr-2 text-black" />
+          </Link>
         </div>
       </div>
     </header>

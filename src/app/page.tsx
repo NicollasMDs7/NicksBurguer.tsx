@@ -1,21 +1,20 @@
+import { Navbar } from "@/components/navbar/navbar";
+import { Footer } from "@/components/footer/footer";
 
-import {Navbar} from "@/components/navbar/navbar";
-import {Footer} from "@/components/footer/footer";
-import {Inicio} from "@/components/inicio/inicio";
-import { SobreNos } from "@/components/sobreNos/sobreNos";
-import { Depoimentos } from "@/components/depoimentos/depoimentos";
+import { Depoimentos } from "@/components/mais-pedidos/mais-pedidos";
 import { Localizacao } from "@/components/localizacao/localizacao";
-import { PreviaMenu } from "@/components/previaMenu/previaMenu";
+import { Cardapio } from "@/components/cardapio/cardapio";
 
 export default function Home() {
-   return (
-     <section className="bg-black">
-       <Navbar />
-       <Depoimentos />
-      
-       <Localizacao />
-       
-       <Footer />
-     </section>
-   )
+  return (
+    <section className="">
+      <Navbar />
+      <Depoimentos />
+      <Cardapio />
+
+      <Localizacao />
+
+      <Footer />
+    </section>
+  );
 }

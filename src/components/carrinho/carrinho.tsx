@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = ["faixada.jpg", "lanches.jpg", "logo.jpg"];
 
-export function SobreNos() {
+export function Carrinho() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentIndexMobile, setCurrentIndexMobile] = useState(0);
 
